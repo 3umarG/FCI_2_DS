@@ -1,11 +1,11 @@
 package com.company;
 
-import com.single_linked_list.SingleLinkedList;
+import com.circular_linked_list.CircularLinkedList;
 
 public class Main {
 
     public static void main(String[] args) {
-        SingleLinkedList list = new SingleLinkedList();
+        CircularLinkedList list = new CircularLinkedList();
 
         list.insertFirst(1);
         list.insertLast(2);
