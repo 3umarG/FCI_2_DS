@@ -1,11 +1,12 @@
 package com.company;
 
 import com.circular_linked_list.CircularLinkedList;
+import com.double_linked_list.DoublyLinkedList;
 
 public class Main {
 
     public static void main(String[] args) {
-        CircularLinkedList list = new CircularLinkedList();
+        DoublyLinkedList list = new DoublyLinkedList();
 
         list.insertFirst(1);
         list.insertLast(2);
@@ -13,13 +14,13 @@ public class Main {
         list.insertLast(4);
         list.insertLast(5);
         list.insertFirst(0);
-        list.display();
+        list.displayItemsFromHead();
         System.out.println("----------");
         list.deleteFirst();
-        list.display();
+        list.displayItemsFromHead();
         System.out.println("----------");
         list.deleteLast();
-        list.display();
+        list.displayItemsFromHead();
 
     }
 }
