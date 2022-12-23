@@ -5,4 +5,4 @@
   - Circular Linked List
   - Stack & Queue
   - Tree
-  - Sorting "still on progress"
+  - Sorting 
