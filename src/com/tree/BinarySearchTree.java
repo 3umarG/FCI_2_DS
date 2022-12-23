@@ -4,6 +4,32 @@ public class BinarySearchTree {
 
     TreeNode root;
 
+    public void insert(int item) {
+        TreeNode newNode = new TreeNode(item);
+        if (root == null)
+            root = newNode;
+        else {
+            TreeNode current = root;
+            TreeNode parent;
+            while (true) {
+                parent = current;
+                if (item <= current.value) {
+                    current = current.left;
+                    if (current == null) {
+                        parent.left = newNode;
+                        return;
+                    }
+                } else {
+                    current = current.right;
+                    if (current == null) {
+                        parent.right = newNode;
+                        return;
+                    }
+                }
+            }
+        }
+    }
+
     public BinarySearchTree() {
         root = null;
     }
